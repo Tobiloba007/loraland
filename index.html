@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loraland - Real Estate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/WhatsApp_Image_2023-09-09_at_12.19.39-removebg-preview.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="img p-2 me-2">
+                        <img src="img/WhatsApp_Image_2023-09-09_at_12.19.39-removebg-preview.png" alt="img" style="width: 120px; height: 120px;">
+                    </div>
+                    <h1 class="m-0 text-primary">Loraland</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LOCATIONS</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item">Lagos state</a>
+                                <a href="Ibadan.html" class="dropdown-item">Ibadan Oyo state</a>
+                                <a href="Abeokuta.html" class="dropdown-item">Abeokuta </a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <!-- <a href="404.html" class="dropdown-item">404 Error</a> -->
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4"> Welcome to LORALAND Real Estate <span class="text-primary"> where we embark on a journey to </span>redefine the real estate industry </h1>
+                    <p class="animated fadeIn mb-4 pb-2"> Our Visison is to creatively and excellently
+                        provide exceptional, reliable and satisfactory real estate sevices and
+                        create lasting value for our clients and investors through innovative real
+                        estate solutions. We are committed to excellence, integrity, and sustainable
+                        growth. </p>
+                    <a href="property-agent.html" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/New Estate.jpeg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/LORA CLOSER.png" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/New Estate.jpeg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/LORA CLOSER.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Our Properties</option>
+                                    <option value="1">Lagos State</option>
+                                    <option value="2">Ibadan Oyo State</option>
+                                    <option value="3">Abekuta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Locations</option>
+                                    <option value="1">IBADAN</option>
+                                    <option value="2">Akinyele ibadan
+                                    </option>
+                                    <option value="3">Moniya Ibadan
+                                    </option>
+                                    <option value="3">Eleyele Ibadan
+                                    </option>
+                                    Ido ologunerun
+                                    <option selected>ABEKUTA</option>
+                                    <option value="1">obada</option>
+                                    <option value="2">Kobape</option>
+                                    <option value="3">Ponkunku 
+                                    </option>
+                                    <option value="1">Igboti</option>
+                                    <option selected>LAGOS</option>
+                                    <option selected>Mutakun Epe
+                                    </option>
+                                    <option selected>Epe beside Isinmi Lagos
+                                    </option>
+                                    <option selected>Ikorodu</option>
+                                    <option selected>Ibeju lekki</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Property Types</h1>
+                    <p>Your dream through innovating and trust worthy services, which encapsulates our real estate philosophy along line with expatriate in all fields.
+                        .</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="property-list.html">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
+                                </div>
+                                <h6>Lagos State</h6>
+                                <span>04 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="Ibadan.html">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-villa.png" alt="Icon">
+                                </div>
+                                <h6>Ibadan Oyo State</h6>
+                                <span>03 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="Abeokuta.html">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-house.png" alt="Icon">
+                                </div>
+                                <h6>Abeokuta</h6>
+                                <span>04 Properties</span>  
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-housing.png" alt="Icon">
+                                </div>
+                                <h6>Office</h6>
+                                <span>03</span>
+                            </div>
+                        </a>
+                    </div>
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-2698373e-d6e9-4818-a56d-36f14a8d4eae" data-elfsight-app-lazy></div>
+                    <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-building.png" alt="Icon">
+                                </div>
+                                <h6>Building</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-neighborhood.png" alt="Icon">
+                                </div>
+                                <h6>Townhouse</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-condominium.png" alt="Icon">
+                                </div>
+                                <h6>Shop</h6>
+                                <span>123 Properties</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-luxury.png" alt="Icon">
+                                </div>
+                                <h6>Garage</h6>
+                                <span>123 Properties</span> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/compp.jpeg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">OUR MISSION
+                        </h1>
+                        <p class="mb-4"> Our mission is to simplify the value of real estate investmet by providing
+                            quality services and build long-term relationships with our clients while
+                            maintaining a high level of professionalism and be the preferred partner for
+                            real estate investments, offering tailored solutions, and achieving
+                            consistent returns for our investors.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Certificates of Occupancy (C of O)
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Land Survey Plan.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Approved Layout Plan.
+                        </p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="https://wa.me/2349054876219">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- Property List Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">Property Listing</h1>
+                            <p>Affordable Land and Homes.
+                                We are in the process of helping people realize their aspirations for the pride of ownership, comfort, security and wealth through the provision of excellent homes and the will to provide homes for all classes of society with focus on the neglected populace in respect to government housing programs,you can partner with Loraland and become a land owner in any of our estates. This has really helped and encouraged many beneficiaries who bought land from us.    
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="property-list.html"></a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="Ibadan.html"></a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="Abeokuta.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#1.2M</h5>
+                                        <a class="d-block h5 mb-2" href="">ROYAL PARK</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>OBADA</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#750K</h5>
+                                        <a class="d-block h5 mb-2" href="">HERITAGE</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>KOBAPE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#750K</h5>
+                                        <a class="d-block h5 mb-2" href="">PEACE</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>PANKUKU</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#750K</h5>
+                                        <a class="d-block h5 mb-2" href="">GLORY</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>IGBOTI OBADA</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">  
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#1.2M</h5>
+                                        <a class="d-block h5 mb-2" href="">GOLDEN GATE</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>ONIDUNDUN, AKINYELE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#1.2M</h5>
+                                        <a class="d-block h5 mb-2" href="">HOLLAND PARK</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>ALABATA IBADAN</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#3M</h5>
+                                        <a class="d-block h5 mb-2" href="">TEE PARK</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>IDO OLOGUNERU, ELEYELE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#1M</h5>
+                                        <a class="d-block h5 mb-2" href="">KINGS COURT</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>IDO OLOGUNERU, ELEYELE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#600K</h5>
+                                        <a class="d-block h5 mb-2" href="">ARAS COURT</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>IDI AMU, IDO OLOGUNERU</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#1M</h5>
+                                        <a class="d-block h5 mb-2" href="">CREST ISLAND</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>LAGOS</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#3M</h5>
+                                        <a class="d-block h5 mb-2" href="">BRYAN</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>MUTAKU EPE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#18M</h5>
+                                        <a class="d-block h5 mb-2" href="">BRYAN</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>ISIMI EPE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#5.2M</h5>
+                                        <a class="d-block h5 mb-2" href="">DERRYS COURT</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>LA CAMPAIGN, IBEJU LEKKI</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#2M</h5>
+                                        <a class="d-block h5 mb-2" href="">HAVENS GATE</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>MUTAKU EPE</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/New Estate.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">FOR SELL</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">LAND</div>
+                                    </div>
+                                    <!-- <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#2.2M</h5>
+                                        <a class="d-block h5 mb-2" href="">MAVERICKS COURT</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>AGBOWO IKORODU</p>
+                                    </div> -->
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>PLOT</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>PLOT</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Building</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#12,345</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Home</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#12,345</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    </div> -->
+                                <!-- </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">#12,345</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House For Sell</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property List End -->
+
+
+        <!-- Call to Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/agnet.jpeg" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
+                                    <p>Whether you’re looking for property for sale in Nigeria or property for rent, Loraland makes searching easy. Use our unique geolocation mapping feature to root-out your ideal villa, townhouse or apartment and contact the owners direct. We will help you find your dream house in just a few seconds.</p>
+                                </div>
+                                <a href="https://wa.me/2349054876219"class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
+                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?96788';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+            "enabled":true,
+            "chatButtonSetting":{
+                "backgroundColor":"#00e785",
+                "ctaText":"Chat with us",
+                "borderRadius":"25",
+                "marginLeft": "0",
+                "marginRight": "20",
+                "marginBottom": "20",
+                "ctaIconWATI":false,
+                "position":"left"
+            },
+            "brandSetting":{
+                "brandName":"loraland",
+                "brandSubTitle":"undefined",
+                "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+                "welcomeText":"Hi there!\nHow can I help you?",
+                "messageText":"Hello, %0A I have a question about {{page_link}}",
+                "backgroundColor":"#00e785",
+                "ctaText":"Chat with us",
+                "borderRadius":"25",
+                "autoShow":false,
+                "phoneNumber":"2349054876219"
+            }
+            };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        </script>
+        <!-- Call to Action End -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">BECOME A LORA CLOSER</h1>
+                    <p>LORACLOSERS
+                        These are our sales partners. They are one of the strong pillars of the brand that associate them selves with the brand and leverage on our products in reaching out to their clients Being a lora closer helps you earn and work freely from the comfort of your home. Responsibility of lora closer Connecting client with the brand Promote the brand property Serves as intermediary between the brands and the client Give investment idea to their clients Gives consistent report and feedback from client to the brand Benefit of being a lora closer 10% instant withdrawal per sales Free Admission into Lora university Free support from brand towards your sales project An Estate officer/ Community Lead Sponsorship for events 1%extra per target smashed Lora Closer University is a licensed University where you learn The art in real estate The real money in real estate Branding Market Sales Closing deal Graphics and Video editing Networking Realtor certificate is issued after the class
+                        The LoraCloser university is a $500 class for non sales partners but free for loracloser
+                        </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                     <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/LORA CLOSER.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/loraland_realestate/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61551057929827&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/loraland-real-estate-223319288"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://x.com/LoralandR21258?t=tpgWETe9UeG08YHP7oWxEw&s=08"><i class="fab fa-twitter"></i></a>        
+                                </div>
+                             </div>
+                            <div class="text-center p-4 mt-3">
+                                <!-- <h5 class="fw-bold mb-0">Agboola Kayode</h5>
+                                <small>Executive Manager</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="imG/LORA CLOSER.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/loraland_realestate/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61551057929827&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/loraland-real-estate-223319288"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://x.com/LoralandR21258?t=tpgWETe9UeG08YHP7oWxEw&s=08"><i class="fab fa-twitter"></i></a>        
+                                </div>
+                             </div>
+                            <div class="text-center p-4 mt-3">
+                                <!-- <h5 class="fw-bold mb-0">Adebesin Ayotunde
+                                </h5>
+                                <small>Creative Director</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/LORA CLOSER.png" alt=""> 
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/loraland_realestate/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61551057929827&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/loraland-real-estate-223319288"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href="https://x.com/LoralandR21258?t=tpgWETe9UeG08YHP7oWxEw&s=08"><i class="fab fa-twitter"></i></a>        
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <!-- <h5 class="fw-bold mb-0">Oladejo Ayoola
+                                </h5>
+                                <small>Admin Officer/HR</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/LORA CLOSER.png" alt=""> 
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/loraland_realestate/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61551057929827&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/loraland-real-estate-223319288"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/LoralandR21258?t=tpgWETe9UeG08YHP7oWxEw&s=08"><i class="fab fa-twitter"></i></a>
+                                </div>
+                             </div>
+                            <div class="text-center p-4 mt-3">
+                                <!-- <h5 class="fw-bold mb-0">Dada olufunke susan</h5>
+                                <small>Customer Care</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-10">
+            <div class="container">
+                <div class="text-center mx-auto mb-10 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>“I purchased through Loraland and found their level of service to be above and beyond and I would highly recommend them to any future purchasers if they require a great level of service.”</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>We would like to personally thank Loraland for the hard work they put in whilst selling our home in Epe,.We would highly recommend any future seller to work with them, they are good professionals</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/nana-yaw-otoo-bxpiMBp0FtU-unsplash.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Mrs Olatunji Esther</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>“Thank you so much for the great service you provided us throughout the settlement process. You made it so carefree and easy for us throughout the whole process. we never knew it could be easy.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/my picccc.jpeg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Mr Okewale p.</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>“I purchased through Loraland and found their level of service to be above and beyond and I would highly recommend them to any future purchasers if they require a great level of service.”</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/divine-effiong-Mn_-cbRkiNw-unsplash.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Mr Taiwo M.</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Gem building, opposite Total Filling Station beside Ventura, Sango, Ibadan, Nigeria.</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>https://wa.me/2349054876219</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>loralands1@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/loraland_realestate/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61551057929827&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/loraland-real-estate-223319288"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/LoralandR21258?t=tpgWETe9UeG08YHP7oWxEw&s=08"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Photo Gallery</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/1.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/2.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/3.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/4.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/5.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/6.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p> offering tailored solutions, and achieving
+                            consistent returns for our investors.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="loralands1@gmail.com">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Lora Real Estate</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://www.Spacecode.com.ng">Spacecode</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
