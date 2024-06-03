@@ -1,0 +1,301 @@
+
+//>>>>> Video Animation Start <<<<<//
+@-webkit-keyframes video-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+@keyframes video-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+	 } 
+}
+//>>>>> Video Animation End <<<<<//
+
+//>>>>> Circle Animation Start <<<<<//
+@keyframes cir36 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+//>>>>> Circle Animation End <<<<<//
+
+
+
+//>>>>> Preloader Animation Start <<<<<//
+ @-webkit-keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@-webkit-keyframes letters-loading {
+	0%,
+	75%,
+	100% {
+		opacity: 0;
+		transform: rotateY(-90deg);
+	}
+	25%,
+	50% {
+		opacity: 1;
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes letters-loading {
+	0%,
+	75%,
+	100% {
+		opacity: 0;
+		transform: rotateY(-90deg);
+	}
+	25%,
+	50% {
+		opacity: 1;
+		transform: rotateY(0deg);
+	}
+}
+
+//>>>>> Preloader Animation Start <<<<<//
+@keyframes loaderspin {
+	0% {
+	  transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+	  transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+
+@keyframes tpswing{
+	0% {
+    -webkit-transform: rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform: rotate(25deg);
+	}
+    100% { 
+      -webkit-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+      transform: rotate(0deg);
+	}
+}
+
+
+@keyframes width {
+	0% {
+	  width: 0%;
+	}
+	100% {
+	  width: 100%;
+	}
+}
+
+@-webkit-keyframes width {
+	0% {
+		width: 0%;
+	  }
+	  100% {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes loaderspin {
+0% {
+	transform: translate(-50%, -50%) rotate(0deg);
+}
+100% {
+	transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+
+@keyframes loaderpulse {
+0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(1.2);
+}
+}
+//>>>>> Preloader Animation End <<<<<//
+
+
+@-webkit-keyframes scale-up-one {
+	0%   {-webkit-transform: scale(1);transform: scale(1);}
+	40%  {-webkit-transform: scale(0.5);transform: scale(0.5);}
+	100% {-webkit-transform: scale(1);transform: scale(1);}
+  }
+  @keyframes scale-up-one {
+	0%   {-webkit-transform: scale(1);transform: scale(1);}
+	40%  {-webkit-transform: scale(0.5);transform: scale(0.5);}
+	100% {-webkit-transform: scale(1);transform: scale(1);}
+  }
+  @-webkit-keyframes scale-up-two {
+	0%   {-webkit-transform: scale(0.5);transform: scale(0.5);}
+	40%  {-webkit-transform: scale(0.8);transform: scale(0.8);}
+	100% {-webkit-transform: scale(0.5);transform: scale(0.5);}
+  }
+  @keyframes scale-up-two {
+	0%   {-webkit-transform: scale(0.5);transform: scale(0.5);}
+	40%  {-webkit-transform: scale(0.8);transform: scale(0.8);}
+	100% {-webkit-transform: scale(0.5);transform: scale(0.5);}
+  }
+  @-webkit-keyframes scale-up-three {
+	0%   {-webkit-transform: scale(0.7);transform: scale(0.7);}
+	40%  {-webkit-transform: scale(0.4);transform: scale(0.4);}
+	100% {-webkit-transform: scale(0.7);transform: scale(0.7);}
+  }
+  @keyframes scale-up-three {
+	0%   {-webkit-transform: scale(0.7);transform: scale(0.7);}
+	40%  {-webkit-transform: scale(0.4);transform: scale(0.4);}
+	100% {-webkit-transform: scale(0.7);transform: scale(0.7);}
+  }
+
+
+  
+@keyframes bounce {
+	0%,
+	100% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes movebounce {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes movebounce {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes bounceUp {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bounceUp {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@-webkit-keyframes moveleftbounce {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	50% {
+		-webkit-transform: translateX(40px);
+		transform: translateX(40px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+@keyframes moveleftbounce {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	50% {
+		-webkit-transform: translateX(40px);
+		transform: translateX(40px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+@-webkit-keyframes moverightbounce {
+	0% {
+		margin-left: 0px;
+	}
+	50% {
+		margin-left: 50px;
+	}
+	100% {
+		margin-left: 0px;
+	}
+}
+
+@keyframes moverightbounce {
+	0% {
+		margin-left: 0px;
+	}
+	50% {
+		margin-left: 50px;
+	}
+	100% {
+		margin-left: 0px;
+	}
+}

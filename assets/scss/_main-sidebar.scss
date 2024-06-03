@@ -1,0 +1,208 @@
+
+.main-sidebar {
+    margin-left: 35px;
+
+    @include breakpoint(max-xl){
+        margin-left: 0;
+    }
+
+    .single-sidebar-widget {
+        background-color: $bg-color;
+        padding: 40px;
+        margin-bottom: 40px;
+
+        @include breakpoint(max-xl){
+            padding: 25px;
+        }
+
+        @include breakpoint(max-sm){
+           margin-bottom: 30px;
+        }
+
+        .wid-title {
+            margin-bottom: 25px;
+            span {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+
+        .message-form {
+            .single-form-input {
+                position: relative;
+
+                input,textarea {
+                    margin-bottom: 20px;
+                    padding: 18px 20px;
+                    line-height: 1;
+                    font-size: 14px;
+                    width: 100%;
+                    border: none;
+                    color: $text-color;
+                    text-transform: uppercase;
+                }
+
+                .icon {
+                    position: absolute;
+                    right: 20px;
+                    top: 12px;
+                    color: $theme-color;
+                    border-left: 1px solid $border-color-2;
+                    padding-left: 15px;
+                }
+
+                textarea {
+                    padding: 18px 20px 90px;
+                }
+            }
+        }
+
+        .faq-category-link {
+            a {
+                padding: 18px 20px;
+                background-color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                display: block;
+                position: relative;
+
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+
+                i {
+                   margin-right: 15px;
+                   @include transition;
+                }
+
+                &::before {
+                    position: absolute;
+                    right: 20px;
+                    font-family: $fa;
+                    content: "\f054";
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+
+                    i {
+                        color: $theme-color-2;
+                    }
+                }
+
+                &.active {
+                    background-color: $theme-color;
+                    color: $white;
+
+                    i {
+                        color: $theme-color-2;
+                    }
+                }
+            }
+        }
+
+        .info-list {
+            li {
+                text-transform: capitalize;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .download-service-doc{
+            a {
+                width: 100%;
+                padding: 18px 20px;
+                font-size: 18px;
+                display: inline-block;
+                text-transform: uppercase;
+                background-color: $white;
+                font-size: 14px;
+                font-weight: 500;
+
+                i{
+                    font-size: 22px;
+                    margin-right: 15px;
+                    color: $theme-color-2;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+
+                @include breakpoint(max-xxl){
+                    font-size: 16px;
+                    padding: 18px 40px;
+                }
+
+                @include breakpoint(max-sm){
+                    font-size: 15px;
+                    padding: 18px 25px;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+
+                &.active {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.prev-next-btns {
+    padding: 20px 0;
+    border-top: 1px solid $border-color-2;
+    border-bottom: 1px solid $border-color-2;
+
+    .text {
+        font-size: 14px;
+        color: $theme-color;
+        font-weight: 500;
+        @include transition;
+        text-transform: uppercase;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        color: $theme-color;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid $border-color-2;
+        @include transition;
+    }
+
+    .prev-btn,.next-btn {
+        gap: 15px;
+    }
+
+    .prev-btn, .next-btn {
+       &:hover {
+            .text {
+                color: $theme-color-2;
+            }
+
+            .icon {
+                background-color: $theme-color-2;
+                color: $white;
+                border: 1px solid $theme-color-2;
+            }
+       }
+    }
+}

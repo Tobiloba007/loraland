@@ -1,0 +1,171 @@
+
+
+
+//>>>>> Section Title Start <<<<<//
+
+.section-title{
+	position: relative;
+	z-index: 99;
+	margin-bottom: 25px;
+	margin-top: -10px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	span {
+		color: $theme-color;
+		margin-bottom: 8px;
+		display: inline-block;
+		font-size: 22px;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 14px;
+
+		img{
+			margin-right: 5px;
+		}
+
+		.title-img-2 {
+			margin-left: 5px;
+		}
+
+		&.white-text {
+			color: $white !important;
+		}
+	}
+
+	&.white-color {
+		span {
+			color: $theme-color-2;
+		}
+
+		h2 {
+			color: $white;
+			margin-bottom: 30px;
+		}
+
+	}
+
+	&.color-white-2 {
+		span {
+			color:  $white;
+		}
+
+		h2 {
+			color: $white;
+		}
+	}
+
+	.text-color {
+		color: $theme-color-2;
+		font-size: 50px;
+		font-weight: 600;
+
+		@include breakpoint (max-xl){
+			font-size: 37px;
+		}
+
+		@include breakpoint (max-lg){
+			font-size: 32px;
+		}
+
+		@include breakpoint (max-sm){
+			font-size: 28px;
+		}
+	}
+
+	&.style-2 {
+		margin-bottom: 35px;
+
+		h2 {
+
+			.text-color {
+				color: $theme-color-2;
+				font-size: 50px;
+				font-weight: 600;
+
+				@include breakpoint (max-xl){
+					font-size: 37px;
+				}
+
+				@include breakpoint (max-lg){
+					font-size: 32px;
+				}
+
+				@include breakpoint (max-sm){
+					font-size: 28px;
+				}
+			}
+		}
+
+		@include breakpoint (max-lg){
+			br {
+				display: none;
+			}
+		}
+
+		@include breakpoint (max-sm){
+			margin-bottom: 25px;
+		}
+	}
+
+}
+
+.right-text {
+	position: relative;
+	h3 {
+		font-size: 120px;
+		opacity: .2;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: var(--theme);
+		-webkit-text-fill-color: transparent;
+		line-height: 120%;
+	}
+
+	h6 {
+		position: absolute;
+		top: 45%;
+		left: 35%;
+		font-size: 16px;
+
+		@include breakpoint(max-lg){
+			left: 8%;
+		}
+	}
+}
+
+//>>>>> Section Title End <<<<<//
+
+//>>>>> Basic Css Start <<<<<//
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section-bg{
+	background-color: $bg-color;
+}
+
+.section-bg-2{
+	background-color: $theme-color;
+}
+
+.theme-bg-2 {
+	background-color: $theme-color-2;
+}
+
+
+
+.section-padding{
+	padding: 120px 0;
+	@include breakpoint(max-xl){
+		padding: 100px 0;
+	}
+	@include breakpoint(max-lg){
+		padding: 80px 0;
+	}
+}
+//>>>>> Basic Css End <<<<<//
+

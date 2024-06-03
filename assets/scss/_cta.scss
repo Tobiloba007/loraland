@@ -1,0 +1,220 @@
+.cta-call-to-action {
+    position: relative;
+
+    @include breakpoint(max-xl){
+       padding-bottom: 0;
+    }
+
+    .dot-shape {
+       position: absolute;
+       top: 10%;
+       left: 10%;
+
+       @include breakpoint(max-xl) {
+         display: none;
+       }
+    }
+
+    .cta-img {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        animation: scale-up-two 8s infinite linear;
+
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+
+    .cta-img-2 {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        animation: scale-up-two 9s infinite linear;
+
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+
+    .cta-img-3 {
+        position: absolute;
+        bottom: 20%;
+        left: 27%;
+        animation: scale-up-two 10s infinite linear;
+
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+
+    .cta-img-4 {
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        animation: scale-up-two 11s infinite linear;
+
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+
+    .cta-img-5 {
+        position: absolute;
+        right: 10%;
+        bottom: 22%;
+        animation: scale-up-two 12s infinite linear;
+
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+}
+
+.cta-content-items {
+    position: relative;
+    z-index: 9;
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 50%;
+        background-color: $theme-color;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    span {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $theme-color;
+    }
+
+    h2 {
+        margin-top: 10px;
+
+        .text {
+            font-size: 50px;
+            font-weight: 600;
+            color: #00165933;
+
+            @include breakpoint(max-xl){
+                font-size: 37px;
+            }
+            @include breakpoint(max-lg){
+                font-size: 32px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 28px;
+            }
+        }
+
+        .text-2 {
+            font-size: 50px;
+            font-weight: 600;
+            color: $theme-color-2;
+
+            @include breakpoint(max-xl){
+                font-size: 37px;
+            }
+            @include breakpoint(max-lg){
+                font-size: 32px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 28px;
+            }
+        }
+    }
+
+    .cta-button {
+        @include flex;
+        margin-top: 50px;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+.cta-banner-wrapper {
+    border-bottom: 1px solid $border-color-2;
+    @include flex;
+    justify-content: space-between;
+    
+    @include breakpoint(max-xl){
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .cta-content {
+        gap: 30px;
+        @include flex;
+
+        p {
+            font-size: 16px;
+            max-width: 310px;
+        }
+    }
+
+    form {
+        position: relative;
+
+        @include breakpoint(max-sm){
+            width: 100%;
+        }
+
+        input {
+          width: 500px;
+          color: $text-color;
+          border: none;
+          outline: none;
+          background: $bg-color;
+          padding: 18px 20px;
+          font-size: 14px;
+          position: relative;
+        }
+
+        button {
+          border: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+    }
+}
+
+.cta-join-wrapper {
+    position: relative;
+    padding: 0 50px;
+    background-color: $bg-color;
+    border-left: 4px solid $theme-color;
+
+    @include breakpoint (max-xl){
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px 30px;
+    }
+
+    @include breakpoint (max-sm){
+        justify-content: center !important;
+        gap: 20px;
+    }
+    
+    .team-image {
+        margin-top: -60px;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+}
+
+.cta-join-us {
+    padding-top: 45px;
+
+    @include breakpoint (max-xl){
+        padding-top: 0;
+    }
+}

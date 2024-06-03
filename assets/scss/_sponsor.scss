@@ -1,0 +1,51 @@
+
+.sponsors-wrapper {
+    position: relative;
+
+    .sponsors-content {
+        border-right: 1px solid #ff5e1557;
+
+        @include breakpoint(max-xxl){
+            border: none;
+        }
+
+        p {
+            color: $white;
+            opacity: .7;
+            max-width: 480px;
+        }
+
+        .sponsors-button {
+            margin-top: 40px;
+        }
+    }
+
+    .sponsor-right {
+        margin-left: 90px;
+
+        @include breakpoint(max-xxl){
+            margin-left: 0;
+        }
+
+        .sponsor-items {
+
+            @include breakpoint(max-sm){
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: initial !important;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 100px;
+
+                @include breakpoint(max-xl){
+                    margin-bottom: 70px;
+                }
+
+                @include breakpoint(max-sm){
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

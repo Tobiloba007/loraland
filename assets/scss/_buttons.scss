@@ -1,0 +1,235 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn{
+    padding: 22px 45px;
+	display: inline-block;
+    background-color: $white;
+	position: relative;
+
+    .theme-effect {
+        text-transform: uppercase;
+        font-size: 15px;
+		position: relative;
+        @include transition;
+        color: $theme-color;
+        font-weight: 500;
+
+        position: relative;
+        overflow: hidden;
+        display: block;
+        height: 17px;
+        line-height: normal;
+
+        .effect-1 {
+            display: block;
+            height: 100%;
+            position: relative;
+            top: 0%;
+            transition: 0.3s;
+        }
+
+        i {
+            position: relative;
+            color: $theme-color;
+            @include transition;
+            margin-right: 5px;
+        }
+    }
+
+
+    &::before{
+        position: absolute;
+		content: "";
+		width: 0%;
+		height: 100%;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-color: $theme-color-2;
+		@include transition;
+
+    }
+
+    &:hover {
+		span,i {
+            color: $white;
+		}
+		&::before {
+			width: 100%;
+			left: 0px;
+		}
+	}
+
+    &.bg-color-2 {
+        background-color: $theme-color-2;
+
+        span,i {
+            color: $white;
+            @include transition;
+        }
+
+        &::before{
+            background-color: $white;
+        }
+
+        &:hover {
+            span,i {
+                color: $theme-color-2;
+            }
+        }
+    }
+
+    &.bg-color-3 {
+        background-color: $theme-color;
+
+        span,i {
+            color: $white;
+        }
+
+        &::before {
+            background-color: $theme-color-2;
+        }
+    }
+
+    &.bg-color-4 {
+        background-color: $white;
+        border: 2px solid $theme-color;
+        padding: 20px 45px;
+
+        span,i {
+            color: $theme-color;
+        }
+
+        &::before {
+            background-color: $theme-color;
+        }
+
+        &:hover {
+            span,i {
+                color: $white;
+            }
+        }
+
+        @include breakpoint(max-lg){
+            padding: 18px 35px;
+        }
+    
+        @include breakpoint(max-sm){
+            padding: 16px 32px;
+        }
+    }
+
+    &.bg-color-5 {
+        background: rgba(255, 255, 255, 0.01);
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.80);
+        backdrop-filter: blur(20px);
+        span,i {
+            color: $white;
+        }
+
+        &::before {
+            background-color: $theme-color-2;
+        }
+
+        &:hover {
+            span,i {
+                color: $white;
+            }
+        }
+    }
+
+    &.bg-color-6 {
+        background: #0D2468;
+
+        span,i {
+            color: $white;
+        }
+
+        &::before {
+            background-color: $theme-color-2;
+        }
+
+        &:hover {
+            span,i {
+                color: $white;
+            }
+        }
+    }
+
+    &.bg-color-6-active {
+        background-color: $theme-color-2;
+        span,i {
+            color: $white;
+        }
+
+        &::before {
+            background: #0D2468;
+        }
+
+        &:hover {
+            span,i {
+                color: $white;
+            }
+        }
+    }
+
+    &.hover-color {
+        background-color: $theme-color-2;
+
+        span,i {
+            color: $white;
+            @include transition;
+        }
+
+        &::before{
+            background-color: $theme-color;
+        }
+
+        &:hover {
+            span,i {
+                color: $white;
+            }
+        }
+    }
+
+    &.white-border {
+        border: 2px solid $white;
+        background-color: transparent;
+
+        span,i {
+            color: $white;
+        }
+
+        &::before{
+            background-color: $theme-color-2;
+        }
+
+        &:hover {
+            border: 2px solid $theme-color-2;
+        }
+    }
+
+    &.padding-style {
+        padding: 22px 35px;
+    }
+
+    @include breakpoint(max-lg){
+        font-size: 15px;
+        padding: 20px 35px;
+    }
+
+    @include breakpoint(max-sm){
+        font-size: 14px;
+        padding: 18px 32px;
+    }
+
+    &:hover {
+        .theme-effect {
+            .effect-1 {
+                top: -100%;
+            }
+        }
+    }
+    
+}
+
+//>>>>> Component Button End <<<<<//

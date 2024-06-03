@@ -1,0 +1,18 @@
+.brand-wrapper {
+    border-bottom: 1px solid $theme-color;
+}
+
+.padding-style {
+    @include breakpoint (max-xxl){
+        padding-top: 120px;
+    }
+
+    @include breakpoint (max-xl){
+        padding-top: 90px;
+    }
+
+    @include breakpoint (max-lg){
+        padding-top: 70px;
+    }
+}
+

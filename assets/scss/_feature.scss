@@ -1,0 +1,99 @@
+.video-items {
+    position: relative;
+    
+    .circle-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .text-circle {
+            animation: cir36 10s linear infinite;
+        }
+
+        .video-button {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: $white;
+            border-radius: 50%;
+            color: $theme-color;
+            font-size: 18px;
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+.video-section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 315px 0;
+    background-attachment: fixed;
+
+    @include breakpoint(max-xl){
+        padding: 250px 0;
+    }
+
+    @include breakpoint(max-lg){
+        padding: 200px 0;
+    }
+
+    @include breakpoint(max-sm){
+        padding: 150px 0;
+    }
+}
+
+.funfact-wrapper {
+    border-bottom: 1px solid $theme-color-2;
+}
+
+.single-funfact-items {
+    margin-bottom: -6px;
+    margin-top: -15px;
+
+    .funfact-content {
+        h2 {
+            font-size: 80px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $theme-color;
+            -webkit-text-fill-color: transparent;
+
+            @include breakpoint(max-md){
+                font-size: 62px;
+                margin-top: 20px;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid $theme-color;
+
+            @include breakpoint(max-sm){
+                padding-bottom: 30px;
+            }
+        }
+
+        .title {
+            margin-top: 20px;
+           h6 {
+                font-size: 16px;
+                font-weight: 600;
+           }
+
+           .icon {
+                font-size: 16px;
+                color: $theme-color-2;
+           }
+        }
+    }
+}
